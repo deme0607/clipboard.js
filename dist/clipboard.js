@@ -469,7 +469,7 @@ module.exports = E;
 
             document.body.appendChild(this.fakeElem);
 
-            this.selectedText = (0, _select2.default)(this.fakeElem);
+            this.selectedText = (0, _select2['default'])(this.fakeElem);
             this.copyText();
         };
 
@@ -486,7 +486,7 @@ module.exports = E;
         };
 
         ClipboardAction.prototype.selectTarget = function selectTarget() {
-            this.selectedText = (0, _select2.default)(this.target);
+            this.selectedText = (0, _select2['default'])(this.target);
             this.copyText();
         };
 
@@ -669,7 +669,7 @@ module.exports = E;
         Clipboard.prototype.listenClick = function listenClick(trigger) {
             var _this2 = this;
 
-            this.listener = (0, _goodListener2.default)(trigger, 'click', function (e) {
+            this.listener = (0, _goodListener2['default'])(trigger, 'click', function (e) {
                 return _this2.onClick(e);
             });
         };
@@ -716,7 +716,7 @@ module.exports = E;
         };
 
         return Clipboard;
-    }(_tinyEmitter2.default);
+    }(_tinyEmitter2['default']);
 
     /**
      * Helper function to retrieve attribute value.
